@@ -79,7 +79,7 @@ int main()
 
     signal(SIGINT, sig_handler);
 
-    const int port = 40121;
+    const int port = 14122;
     if (server.start(port) == 0) {  // start server on port 8888
         printf("start server on port %d\n", port);
         wait_group.wait();
